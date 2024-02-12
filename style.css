@@ -386,13 +386,13 @@ footer .credit a {
 }
 
 /* Tablet */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px) {
   html {
     font-size: 70%;
   }
 }
   
-  @media only screen and (max-width: 1080px) {
+  @media only screen and (max-width: 768px) {
     html {
       font-size: 65%;
     }
