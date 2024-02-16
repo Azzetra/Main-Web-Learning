@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kalam:wght@400;700&family=Lemon&family=Pacifico&family=Poppins:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      /* _________________________________________________________________________ */
+      /* ------------------------------------------------------------------------- */
+      /* ==========================Style yang di Pelajari========================= */
+      /* ------------------------------------------------------------------------- */
+
+      img {
+        width: 100%;
+        border: 5px solid brown;
+      }
+
+      div.inline {
+        display: inline-block;
+      }
+
+      /* ------------------------------------------------------------------------- */
+      /* ==============================Kotak Berwarna============================= */
+      /* ------------------------------------------------------------------------- */
+      .satu {
+        background-color: yellow;
+        width: 150px;
+        height: 150px;
+        border: 2px solid;
+        margin-bottom: auto;
+      }
+
+      .dua {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        border: 2px solid;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+
+      .tiga {
+        background-color: blue;
+        width: 50px;
+        height: 50px;
+        border: 2px solid;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      /* __________________________________________________________________________ */
+
+      .satu1 {
+        background-color: lightblue;
+        width: 150px;
+        height: 150px;
+        border: 1px solid;
+        margin-right: 0;
+      }
+
+      .dua2 {
+        background-color: lightcoral;
+        width: 100px;
+        height: 100px;
+        margin-top: -50px;
+      }
+
+      .tiga3 {
+        background-color: yellow;
+        width: 50px;
+        height: 50px;
+        margin-top: -52px;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- =================================HTML=================================== -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+
+  <body>
+    <div class="judul">
+        <a href="2.Dimensi&Overflow.html" class="nextP"><i class='bx bx-chevrons-left bx-lg'></i></a>
+        <h1>3. Box Model</h1>
+        <a href="4.Float&clear.html" class="nextP"><i class='bx bx-chevrons-right bx-lg'></i></a>
+    </div>
+
+    <div class="isi">
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ==============================BOX PERTAMA============================= -->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------- -->
+      <div class="box-1">
+        <div class="daftarIsi">
+          <h3>Daftar Isi</h3>
+          <div class="divDaftarIsi">
+            <ol>
+              <li><a href="#1">Margin............................................................................................................................................................................................................................................................................................................</a></li>
+              <li><a href="#2">Padding...................................................................................................................................................................................................................................................................................................</a></li>
+              <li><a href="#3">Border.......................................................................................................................................................................................................................................................................................................</a></li>
+              <li><a href="#4">BoxSizing................................................................................................................................................................................................................................................................................................</a></li>
+              <li><a href="#5">CSSReset................................................................................................................................................................................................................................................................................................</a></li>
+            </ol>
+          </div>
+          
+        </div>
+        
+        <h3>Konsep Dasar Box Model</h3>
+        <ul>
+          <li>Setiap element di halaman berada dalam sebuah kotak ( box ).</li>
+          <li>Kita dapat mengatur ukuran dan posisi kotak tersebut.</li>
+          <li>
+            Kita dapat memberikan warna dan gambar sebagai background kotak
+            tersebut.
+          </li>
+        </ul>
+
+        <hr color="brown" />
+
+        <div class="dimensi">
+          <p>
+            <b>CSS Box Model</b> mendefinisikan 'kotak' yang dihasilkan oleh
+            sebuah elemen, lalu menampilkannya sesuai dengan format visualnya.
+          </p>
+          <p>
+            <b>CSS Box Model</b> terdiri dari Margin, border, padding dan
+            content.
+          </p>
+        </div>
+
+        <hr color="brown" />
+
+        <h3>CSS Box Model</h3>
+        <div class="img">
+          <img src="img/BoxModel.png" alt="Box" />
+        </div>
+      </div>
+
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ==============================BOX KEDUA================================-->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------- -->
+
+      <div class="box-2">
+        <!-- -------------------------------------------------------------------- -->
+        <!-- ===============================Margin================================-->
+        <!-- -------------------------------------------------------------------- -->
+        <section id="1" class="1">
+          <h3 class="Materi">1. Margin</h3>
+        </section>
+
+        <p>Area transparan di sekitar kotak ( di luar Border ).</p>
+
+
+        <h4>Template margin ( Auto & px ) :</h4>
+        <ol>
+          <li><p>margin: 50px(4 sisi);</p></li>
+          <li><p>margin: 50px(atas dan bawah) 20px(kiri dan kanan);</p></li>
+          <li><p>margin: 50px(atas) 20px(kiri dan kanan) 20px(bawah);</p></li>
+          <li>
+            <p>
+              margin: 50px(atas) 20px(kanan) 10px(bawah) 20px(kiri);<br />(searah
+              jarum jam)
+            </p>
+          </li>
+        </ol>
+
+        <div class="inline">
+          <div class="satu"></div>
+          <div class="dua"></div>
+          <div class="tiga"></div>
+        </div>
+
+
+        <h4>Overlapping Margin</h4>
+
+        <p>
+          Margin itu tidak saling menambahkan, khusus yang vertical, kecuali
+          horizontal.
+        </p>
+
+
+        <h4>Negative Margin</h4>
+
+        <div class="satu1">1</div>
+        <div class="dua2">2</div>
+        <div class="tiga3">3</div>
+
+        
+        <h4>Short Hand</h4>
+        
+        <p>margin: 100px;</p>
+        
+        <hr color="brown" />
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ==========================Padding===================================-->
+        <!-- ------------------------------------------------------------------- -->
+        <section id="2" class="2">
+          <h3 class="Materi">2. Padding</h3>
+        </section>
+
+        <p>Area transparan di dalam kotak ( antara content dan border ).</p>
+        <h4>Ciri khas Padding :</h4>
+        <ol>
+          <li>Padding tidak bisa diberi nilai negatif.</li>
+          <li>Padding tidak mempunyai nilai auto.</li>
+          <li>Padding menambah atau mempengaruhi ukuran box</li>
+        </ol>
+
+        <h4>Contoh padding :</h4>
+
+        <p class="contoh">
+          .element { <br>
+            padding: 10px; <br>}
+            <span>/* Mengatur padding untuk semua sisi sekaligus */</span> <br>
+            <span>/* atau */</span>{<br>
+            padding-top: 10px;<br>
+            padding-right: 20px;<br>
+            padding-bottom: 10px;<br>
+            padding-left: 20px;<br>}
+            <span>/* Mengatur padding secara terpisah untuk setiap sisi */</span>
+          
+          
+        </p>
+
+        <hr color="brown" />
+
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ==========================Border====================================-->
+        <!-- ------------------------------------------------------------------- -->
+        <section id="3" class="3">
+          <h3 class="Materi">3. Border</h3>
+        </section>
+
+        <p>Batas di sekelilingi content dan padding.</p>
+
+        <h4>Style :</h4>
+
+        <ul>
+          <li>Solid</li>
+          <li>Dotted</li>
+          <li>Dashed</li>
+          <li>Double</li>
+        </ul>
+
+        <h4>Template</h4>
+
+        <p><u><i>border: width style color;</i></u></p>
+
+        <p>
+          border-width: 5px;<br>
+          boder-style: solid;<br>
+          border-color: black;<br>
+          border-right: 5px dotted blue;
+        </p>
+
+        <h4>Ciri khas Border :</h4>
+        <ol>
+          <li>Border menambah atau mempengaruhi ukuran pixel pada box</li>
+        </ol>
+        <hr color="brown" />
+        <!-- -------------------------------------------------------------------- -->
+        <!-- =======================Box Sizing====================================-->
+        <!-- -------------------------------------------------------------------- -->
+        <section id="4" class="4">
+          <h3 class="Materi">4. Box Sizing</h3>
+        </section>
+
+        <p>box-sizing adalah properti dalam CSS yang mengontrol cara browser menghitung dimensi suatu elemen HTML, terutama lebar dan tingginya. Properti ini memengaruhi bagaimana padding dan border elemen tersebut diperlakukan dalam perhitungan ukuran keseluruhan elemen.</p>
+
+        <h4>Contoh :</h4>
+
+        <p class="contoh">.elemen {<br>
+          box-sizing: content-box;<br>
+          width: 100px;<br>
+          padding: 10px;<br>
+          border: 2px solid black;<br>
+        }
+        </p>
+
+<br>
+
+        <hr color="brown" />
+        <!-- -------------------------------------------------------------------- -->
+        <!-- ========================CSS Reset====================================-->
+        <!-- -------------------------------------------------------------------- -->
+        <section id="5" class="5">
+          <h3 class="Materi">5. CSS Reset</h3>
+        </section>
+
+        <p>CSS Riset (atau disebut juga CSS Grid Layout atau CSS Grid) bukanlah istilah yang umum digunakan dalam konteks pengembangan web. Namun, jika Anda merujuk pada CSS Grid Layout, itu adalah suatu teknologi dalam CSS yang menyediakan sistem tata letak dua dimensi yang kuat untuk mengatur elemen di halaman web.</p>
+
+        <h4>Contoh :</h4>
+
+        <p class="contoh">html, body, div, span, applet, object, iframe,
+          h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+          a, abbr, acronym, address, big, cite, code,
+          del, dfn, em, img, ins, kbd, q, s, samp,
+          small, strike, strong, sub, sup, tt, var,
+          b, u, i, center,
+          dl, dt, dd, ol, ul, li,
+          fieldset, form, label, legend,
+          table, caption, tbody, tfoot, thead, tr, th, td,
+          article, aside, canvas, details, embed, 
+          figure, figcaption, footer, header, hgroup, 
+          menu, nav, output, ruby, section, summary,
+          time, mark, audio, video {<br>
+            margin: 0;<br>
+            padding: 0;<br>
+            border: 0;<br>
+            font-size: 100%;<br>
+            font: inherit;<br>
+            vertical-align: baseline;<br>
+          }<br>
+          /* HTML5 display-role reset for older browsers */<br>
+          article, aside, details, figcaption, figure, 
+          footer, header, hgroup, menu, nav, section {<br>
+            display: block;<br>
+          }<br>
+          body {<br>
+            line-height: 1;<br>
+          }<br>
+          ol, ul {<br>
+            list-style: none;<br>
+          }<br>
+          blockquote, q {<br>
+            quotes: none;<br>
+          }<br>
+          blockquote:before, blockquote:after,<br>
+          q:before, q:after {<br>
+            content: '';<br>
+            content: none;<br>
+          }<br>
+          table {<br>
+            border-collapse: collapse;<br>
+            border-spacing: 0;<br>
+          }
+        </p>
+
+      </div>
+    </div>
+  </body>
+</html>

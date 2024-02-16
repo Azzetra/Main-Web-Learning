@@ -20,7 +20,8 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    height: 15vh;
+    height: 13vh;
+    z-index: 999;
 }
 
 nav .logo {
@@ -102,9 +103,9 @@ nav .menu a:hover {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    top: 15vh;
+    top: 13vh;
     right: 0;
-    height: 85vh;
+    height: 87vh;
     padding: 0 10rem;
     background-color: #0020a2de;
     box-shadow: -3px 0 10px -1px black;
@@ -113,7 +114,6 @@ nav .menu a:hover {
     /*  */
     transform: translateX(100%);
     transition: .5s;
-    opacity: 1;
 }
 
 .boxDaftarIsi.slide {
@@ -124,9 +124,7 @@ nav .menu a:hover {
     display: flex;
     position: absolute;
     flex-direction: column;
-    justify-content: space-between;
     list-style-type: none;
-    background-color: #00d0ff3b;
     height: auto;
     
 }

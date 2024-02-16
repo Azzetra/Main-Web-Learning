@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kalam:wght@400;700&family=Lemon&family=Pacifico&family=Poppins:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      /* _________________________________________________________________________ */
+      /* ------------------------------------------------------------------------- */
+      /* ==========================Style yang di Pelajari========================= */
+      /* ------------------------------------------------------------------------- */
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+
+.satuStatic {
+  text-align: center;
+  line-height: 100px;
+  color: black;
+  background-color: #e6ff94;
+  width: 100%;
+  height: 100px;
+}
+.duaStatic {
+  margin-top: 50px;
+  text-align: center;
+  line-height: 100px;
+  color: black;
+  background-color: #ff9d9d;
+  width: 100%;
+  height: 100px;
+}
+.tigaStatic {
+  text-align: center;
+  line-height: 100px;
+  color: black;
+  background-color: #81a3ff;
+  width: 100%;
+  height: 100px;
+}
+.satuRelative {
+  text-align: center;
+  line-height: 100px;
+  color: black;
+  background-color: #e6ff94;
+  width: 100%;
+  height: 100px;
+}
+.duaRelative {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  line-height: 100px;
+  color: black;
+  background-color: #ff9d9d;
+  width: 90%;
+  height: 100px;
+}
+.tigaRelative {
+  text-align: center;
+  line-height: 150px;
+  color: black;
+  background-color: #81a3ff;
+  width: 100%;
+  height: 100px;
+}
+
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+
+.satuAbsolute {
+  position: relative;
+  /* Hiasan */
+  box-sizing: border-box;
+  margin-bottom: -4px;
+  text-align: center;
+  line-height: 100px;
+  background-color: #ff87878f;
+  color: black;
+  border: 4px solid rgba(255, 255, 224, 0.471);
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+
+.duaAbsolute {
+  position: absolute;
+  top: 42px;
+  left: 20px;
+  /* hiasan */
+  box-sizing: border-box;
+  font-size: 2rem;
+  font-weight: 1000;
+  line-height: 93px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 217, 0, 0.665);
+  width: 80%;
+  height: 100px;
+  border: 4px solid #ffffff;
+}
+
+.tigaAbsolute {
+  position: relative;
+  /* Hiasan */
+  box-sizing: border-box;
+  background-color: #7acaff83;
+  border: 4px solid rgba(255, 255, 224, 0.471);
+  width: 100%;
+  height: 100px;
+}
+
+
+.fixedBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  /* background-color: red; */
+  width: 30vh;
+  z-index: 9999;
+  transition: 0.5s;
+  border-radius: 0;
+}
+
+.fixedBar.active {
+  transform: translateX(0);
+}
+
+.fixedBar .daftarIsi {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  border: 10px solid brown;
+  height: 100vh;
+  box-shadow: -5px -0px 5px rgba(0, 0, 0, 0.448);
+}
+
+
+    </style>
+  </head>
+
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- =================================HTML=================================== -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+
+  <body>
+    <div class="judul">
+        <a href="4.Float&clear.html" class="nextP"><i class='bx bx-chevrons-left bx-lg'></i></a>
+        <h1>5. CSS Position</h1>    
+        <a href="6.Z-Index.html" class="nextP"><i class='bx bx-chevrons-right bx-lg'></i></a>
+    </div>
+
+    <div class="isi">
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ==============================BOX PERTAMA============================= -->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------- -->
+      <div class="box-1">
+        <div class="daftarIsi">
+          <h3>Value CSS Position</h3>
+          <div class="divDaftarIsi">
+            <ol>
+              <li>
+                <a href="#1"
+                  >Static...................................................................................................................................................................................................................................................................</a
+                >
+              </li>
+              <li>
+                <a href="#2"
+                  >Relative.....................................................................................................................................................................................................................................................................................................................</a
+                >
+              </li>
+              <li>
+                <a href="#3"
+                  >Absolute..........................................................................................................................................................................................................................</a
+                >
+              </li>
+              <li>
+                <a href="#4"
+                  >Fixed..................................................................................................................................................................................................................................................................................................................</a
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
+        <img src="img/PandaTrans.png" alt="panda" class="pandalogo">
+      </div>
+
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ==============================BOX KEDUA================================-->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------- -->
+
+      <div class="box-2">
+        <!-- -------------------------------------------------------------------- -->
+        <!-- ===============================Margin================================-->
+        <!-- -------------------------------------------------------------------- -->
+        <section id="1" class="1">
+          <h3 class="Materi">1. Static <span>(Value Default)</span></h3>
+        </section>
+
+        <h3>Konsep Dasar Static</h3>
+
+        <ul>
+          <li>
+            <span>Static</span> adalah nilai default dari tiap tiap elemen ketika tidak diberi properti <span>Position</span>.
+          </li>
+          <li>
+            Menggunakan position selain static (non static), akan membuat sebuah elemen menjadi seolah olah <span>berbeda dimensi</span> dari elemen lainnya.
+          </li>
+          <li>
+            Elemen yang diberi position selain static dapat menggunakan properti <span>top, left, bottom dan right</span> untuk mengatur posisinya.
+          </li>
+        </ul>
+
+        <h3>Contoh Static</h3>
+        <div class="contoh"><h2>position: static;</h2>
+
+        <p><span>An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</span></p><br>
+
+        <div class="static">
+        This div element has position: static;
+        </div><br>
+
+          <div class="satuStatic">100px</div>
+          <div class="duaStatic">100px + margin top 50px</div>
+          <div class="tigaStatic">100px</div>
+
+        </div>
+        <br>
+
+        <hr color="brown" />
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ==========================Relative===================================-->
+        <!-- ------------------------------------------------------------------- -->
+        <section id="2" class="2">
+          <h3 class="Materi">2. Relative</h3>
+        </section>
+
+        <h3>Konsep dasar Relative</h3>
+
+        <ul>
+          <li>Ketika kita menggerakkan elemen dengan posisi relative (menggunakan properti <span>top, left, bottom dan right</span>), ruang yang ditempati oleh elemen tersebut masih ada. </li>
+          <li>Ketika kita menggerakkan elemen dengan posisi relative, elemen akan bergerak <span>relatif terhadap posisi semula-nya.</span></li>
+          <li>Jika kita memberi properti <span>top: 0; dan left: 0;</span> maka elemen tidak berubah posisinya.</li>
+        </ul>
+
+        <h4>Cara menghentikan / membersihkan float :</h4>
+        <ol>
+          <li>Menggunakan properti <span>overflow: auto;</span></li>
+          <li>Menggunakan <span>Div</span> Kosong.</li>
+          <li>Menggunakan teknik <span>micro clearfix.</span></li>
+        </ol>
+
+        <h4>Contoh Relative :</h4>
+            
+          <div class="contoh">
+            <div class="satuRelative">100px</div>
+            <div class="duaRelative">100px + top 50px</div>
+            <div class="tigaRelative">100px - top (box red) 50px</div>
+          </div>
+          <br><br><br>
+
+        <section id="3" class="3">
+          <h3 class="Materi">3. Absolute</h3>
+        </section>
+
+        <h3>Konsep dasar Absolute</h3>
+
+        <ul>
+          <li>Ketika kita menggerakkan elemen dengan posisi <span>absolute</span> (menggunakan properti <span>top, left, bottom dan right</span>), ruang yang di tempati oleh elemen tersebut diangap tidak ada. </li>
+          <li>Ketika kita menggerakkan elemen dengan posisi <span>absolute</span>, elemen akan bergerak relatif terhadap posisi dari elemen parent-nya, <span>selama elemen parent-nya memiliki posisi yang non-static juga.</span></li>
+        </ul>
+
+            <div class="contoh">
+              <div class="satuAbsolute">
+                <div class="duaAbsolute">Absolute</div>
+              </div>
+              <div class="tigaAbsolute"></div>
+            </div>
+            
+        <br><hr color="brown" />
+
+        <section id="4">
+          <h3 class="Materi">4. Fixed</h3>
+        </section>
+
+        <h4>Konsep dasar Fixed</h4>
+
+        <ul>
+          <li>Ketika kita menggerakkan elemen dengan posisi <span>Fixed</span>, elemen tersebut akan bergerak relatif terhadap Window.</li>
+          <li>Elemen yang di berikan posisi <span>Fixed</span> akan terkunci saat window di scroll.</li>
+        </ul>
+
+        <h4>Contoh Fixed</h4>
+
+        <div class="contoh">
+          <button class="tombol">Tekan Disini untuk melihat</button>
+        </div>
+      </div>
+
+        <div class="fixedBar">
+          <div class="daftarIsi">
+            <h2>Contoh Fixed</h2>
+            <div><h3>Value CSS Position</h3>
+            <div class="divDaftarIsi">
+              <ol>
+                <li>
+                  <a href="#1"
+                    >Static..........................................................................................................................................................................................................................</a
+                  >
+                </li>
+                <li>
+                  <a href="#2"
+                    >Relative.....................................................................................................................................................................................................................</a
+                  >
+                </li>
+                <li>
+                  <a href="#3"
+                    >Absolute...................................................................................................................................................................................................................</a
+                  >
+                </li>
+                <li>
+                  <a href="#4"
+                    >Fixed............................................................................................................................................................................................................................</a
+                  >
+                </li>
+              </ol>
+            </div></div>
+            
+          </div>
+        </div>
+
+  </body>
+
+<script>
+  const fixedBar = document.querySelector ('.fixedBar');
+
+  const button = document.querySelector ('.tombol');
+
+  document.querySelector('.tombol').onclick = () => {
+  fixedBar.classList.toggle('active');
+  }
+
+  document.addEventListener('click', function(e) {
+    if(!button.contains(e.target) && !fixedBar.contains(e.target)) {
+        fixedBar.classList.remove('active');
+    }
+})
+</script>
+</html>

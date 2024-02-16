@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-index</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kalam:wght@400;700&family=Lemon&family=Pacifico&family=Poppins:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      /* _________________________________________________________________________ */
+      /* ------------------------------------------------------------------------- */
+      /* ==========================Style yang di Pelajari========================= */
+      /* ------------------------------------------------------------------------- */
+.container {
+  position: relative;
+}
+
+.white-box {
+  position: relative;
+  z-index: 1;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgba(255, 252, 252, 0.145);
+  height: 100px;
+  margin: 30px auto 30px;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.red-box {
+  position: absolute;
+  z-index: 3; /* gray box will be above both green and black box */
+  border: 2px solid white;
+  background: rgb(146, 0, 0);
+  height: 70px;  
+  width: 70%;
+  left: 50px;
+  top: 4rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.green-box {
+  position: absolute;
+  z-index: 2; /* green box will be above black box */
+  border: 2px solid white;
+  background: rgb(0, 136, 0);
+  width: 35%;
+  left: 25rem;
+  top: -15px;
+  height: 100px;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.tombol {
+    position: relative;
+}
+
+.usePosition {
+    display: none;
+}
+
+.usePosition.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #000000;
+    border-radius: 1rem;
+    top: 150px;
+    bottom: 150px;
+    right: 200px;
+    left: 200px;
+    z-index: 99;
+    opacity: 60%;
+}
+
+.usePosition p {
+    font-size: 7rem;
+}
+
+.usePosition .iklan {
+    font-size: 5rem;
+}
+
+.close {
+    width: 3rem;
+    height: 3rem;
+    border: 5px solid black;
+    background-color: #ff8a8a;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+
+
+    </style>
+  </head>
+
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- =================================HTML=================================== -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+
+  <body>
+    <div class="judul">
+        <a href="5.CSSPosition.html" class="nextP"><i class='bx bx-chevrons-left bx-lg'></i></a>
+        <h1>6. Z-index & penggunaan lain dari position</h1>
+        <a href="../CSS3/css3.html" class="nextP"><i class='bx bx-chevrons-right bx-lg'></i></a>
+    </div>
+
+    <div class="isi">
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ==============================BOX PERTAMA============================= -->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------- -->
+      <div class="box-1">
+        <div class="daftarIsi">
+          <h3>Daftar Isi</h3>
+          <div class="divDaftarIsi">
+            <ol>
+              <li>
+                <a href="#1"
+                  >z_index...................................................................................................................................................................................................................................................................</a
+                >
+              </li>
+              <li>
+                <a href="#2"
+                  >Position_Use.....................................................................................................................................................................................................................................................................................................................</a
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
+        <img src="img/PandaTrans.png" alt="panda" class="pandalogo">
+      </div>
+
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ==============================BOX KEDUA================================-->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------- -->
+
+      <div class="box-2">
+        <!-- -------------------------------------------------------------------- -->
+        <!-- ===============================z-index================================-->
+        <!-- -------------------------------------------------------------------- -->
+        <section id="1" class="1">
+          <h3 class="Materi">z-index</span></h3>
+        </section>
+
+        <h3>Konsep z-index</h3>
+
+        <ul>
+          <li>
+            <span>z-index</span> adalah suatu properti dalam CSS yang mengontrol tumpukan atau penumpukan elemen-elemen HTML di dalam sebuah window. Properti ini memungkinkan Anda untuk menentukan bagaimana elemen-elemen tersebut ditampilkan relatif terhadap satu sama lain di dalam tumpukan lapisan (stacking context).
+          </li>
+          <li>
+            Nilai dari <em><b>z-index</b></em> adalah <span>bilangan bulat</span>, dan elemen dengan nilai z-index yang lebih tinggi akan ditampilkan di atas elemen dengan nilai z-index yang lebih rendah.
+          </li>
+          <li>
+            Nilai <span><em>z-index</em></span> tidak memengaruhi elemen-elemen di luar stacking context, sehingga hanya berlaku untuk elemen-elemen yang memiliki posisi <span>selain nilai static</span> (seperti relative).
+          </li>
+          <li>
+            Jika elemen-elemen tersebut memiliki posisi static, nilai z-index tidak akan mempengaruhi tumpukan lapisan.
+          </li>
+        </ul>
+
+        <h3>Contoh z-index</h3>
+        <div class="contoh">
+            <h1>Z-index Example</h1>
+
+            <p>Elemen dengan urutan tumpukan lebih besar selalu berada di atas elemen dengan urutan tumpukan lebih rendah.</p>
+
+            <div class="container">
+            <div class="white-box">Black box (z-index: 1)</div>
+            <div class="red-box">Gray box (z-index: 3)</div>
+            <div class="green-box">Green box (z-index: 2)</div>
+            </div> 
+        </div>
+        <br><br>
+
+        <hr color="brown" />
+
+        <section id="2">
+            <h3 class="Materi">Position_Use</h3>
+        </section>
+
+            <h3>Example</h3>
+            <div class="contoh">
+                <button class="tombol"><b>Teken</b></button>
+                <div class="usePosition"><p><span class="iklan">Iklan</span>Fixed</p>
+                <div class="close"><a href="#" class="closeA"><i class='bx bx-x bx-burst-hover bx-lg' style='color:#000000' ></i></a>
+            </div>
+        </div>
+    </div><br><br><br>
+
+  </body>
+
+<script src="script.js"></script>
+</html>

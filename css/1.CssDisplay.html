@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kalam:wght@400;700&family=Lemon&family=Pacifico&family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 50px;
+            background-color: #ffe2bf;
+        }
+        p {
+            font-size: 15px;
+        }
+
+        .header {
+            border: 5px solid brown;
+            text-align: center;
+            background-color: #ffd195;
+            border-radius: 25px;
+        }
+
+        div.isi {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        div.content {
+            border: 3px solid brown;
+            margin-top: 20px;
+            padding-inline: 2%;
+            padding: 2rem;
+            width: 50%;
+            background-color: #fff6ee;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px #3c2500;
+        }
+
+        ul li {
+            padding-top: 12px;
+        }
+
+        div.materi {
+            border: 3px solid brown;
+            margin-top: 20px;
+            padding-inline: 2%;
+            padding: 2rem;
+            width: 50%;
+            background-color: #fff6ee;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px #3c2500;
+        }
+
+        .content span {
+            background-color: rgb(255, 228, 184);
+            border: 2px solid brown;
+            border-radius: 7px;
+            padding: 0px 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="judul">
+        <a href="css.html" class="nextP"><i class='bx bx-chevrons-left bx-lg'></i></a>
+        <h1>1. CSS Display</h1>
+        <a href="2.Dimensi&Overflow.html" class="nextP"><i class='bx bx-chevrons-right bx-lg'></i></a>
+    </div>
+
+    <!-- content -->
+<div class="isi">
+    <div class="content">
+        <h3> Tag pada HTML </h3>
+        <ul>
+            <li>
+                Digunakan untuk memberikan 'Maksud' / 'arti' pada sebuah konten.
+            </li>
+            <li>
+                Setiap tag pada HTML berada di dalam sebuah kotak. properti display pada CSS mengatur perilaku dari kotak tersebut.
+            </li>
+            <li>
+                Setiap tag pada HTML memiliki nilai default untuk properti display. tetapi kita juga dapat mengubah perilalku dari tag tersebut dengan mengganti value-nya.
+            </li>
+        </ul>
+              
+        <hr color="brown"> 
+        
+        <h3>Value dari Display :</h3>
+        <ol>
+            <li>inline</li>
+            <li>inline-block</li>
+            <li>block</li>
+            <li>none</li>
+        </ol>
+
+        <hr color="brown">
+
+        <h3>Tag <em>div</em> dan <em>span</em></h3>
+        <p>
+            Tag <span><b>div</b></span> dan <span><b>span</b></span> tidak memiliki arti apapun, keduanya di gunakan untuk mengelompokkan tag tag HTML dan memberikan informasi terhadap tag tag tersebut.
+        <br><br>
+            <i>Div memiliki properti display default yaitu display: block;</i> 
+        <br>
+            <i>Span memiliki properti display default yaitu display: inline;</i>
+        </p>
+        
+    </div>
+
+<!-- ---------------------------------------------------------------- -->
+
+    <div class="materi">
+        <h3>1. Inline</h3>
+        <ol>
+            <li>Element HTML yang secara default tidak menambahkan baris baru ketika di buat.</li>
+            <li>Lebar dan tinggi elementnya sebesar konten yang ada di dalamnya.</li>
+            <li>Kita tidak dapat mengatur tinggi dan lebar dari element inline.</li>
+            <li>margin dan padding hanya mempengaruhi element secara horizontal, tidak vertikal.</li>
+        </ol>
+
+        <h4>Contoh element Inline :</h4>
+
+        <p>b, strong, i, em, a,  span, sub, sup, button, input, label, select, textarea dll</p>
+
+        <hr color="brown">
+
+        <h3>2. Block</h3>
+        <ol>
+            <li>Element HTML yang secara default menambahkan baris baru ketika di buat</li>
+            <li>Jika tidak diatur lebar-nya, maka lebar default dari element block akan memenuhi lebar dari browser / parent-nya</li>
+            <li>Kita dapat mengatur tinggi dan lebar dari element block</li>
+            <li>Di dalam element block, kita dapat menyimpan tag dengan element inline, inline-block, atau bahkan element block lagi</li>
+        </ol>
+
+        <h4>Contoh element Block</h4>
+
+        <p>h1-6, p, ol, ul, li, form, hr, div,...</p>
+
+        <hr color="brown">
+        
+        <h3>3. Inline-block</h3>
+        
+        <ol>
+            <li>Tidak ada element yang secara default memiliki properti display: inline-block;</li>
+            <li>Kita harus ubah secara manual properti tersebut.</li>
+            <li>Perilaku dasarnya sama dengan element inline.</li>
+            <li>Perbedaannya, elemen inline-block dapat kita atur tinggi dan lebar-nya.</li>
+        </ol>
+
+        <hr color="brown">
+
+        <h3>4. None</h3>
+
+        <p>Digunakan untuk menghilangkan sebuah element.</p>
+    </div>
+    
+</div>        
+
+</body>
+</html>

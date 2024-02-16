@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensi & Overflow</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kalam:wght@400;700&family=Lemon&family=Pacifico&family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+/* --------------------------------------------------------------------------- */
+                /* materi yang sedang di pelajari */
+/* --------------------------------------------------------------------------- */
+
+div.dimensi {
+    width: 1fr;
+    height: 50px;
+    background-color: lightyellow;
+    padding: 20px;
+    border: 2px solid brown;
+}
+
+/* --------------------------------------------------------------------------- */
+                            /* Div dalam div */
+/* --------------------------------------------------------------------------- */
+        
+        .div1 {
+            height: 200px;
+            width: 1fr;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div2 {
+            width: 90%;
+            height: 70%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .div2 h4 {
+            width: 90%;
+            height: 70%;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+                                <!-- JUDUL -->
+    <div class="judul">
+        <a href="1.CssDisplay.html" class="nextP"><i class='bx bx-chevrons-left bx-lg'></i></a>
+        <h1>2. Dimensi & Overflow</h1>
+        <a href="3.BoxModel.html" class="nextP"><i class='bx bx-chevrons-right bx-lg'></i></a>
+    </div>
+
+    
+    <div class="isi">
+        <div class="box-1">
+<!-- ------------------------------------------------------------------------ -->
+                    <!-- CONTENT YANG SEDANG DI PELAJARI -->
+<!-- ------------------------------------------------------------------------ -->
+<h3> Value dalam Dimensi ( Width & Height ) </h3>
+<ul>
+    <li>
+        px = nilai yang absolute ( pasti ) .
+            </li>
+            <li>
+                % = nilai yang relative.
+            </li>
+            <li>
+                in ( inchi ), cm ( centimeter ), mm ( milimeter ), pt ( point ), pc ( pica )
+            </li>
+        </ul>
+        
+        <hr color="brown"> 
+        
+        <div class="dimensi">Hello World</div>
+        
+        <hr color="brown">
+
+<!-- ------------------------------------------------------------------------ -->
+                            <!-- DIV DALAM DIV -->
+<!-- ------------------------------------------------------------------------ -->
+
+<h3>div dalam div</h3>
+<div class="div1">
+    <div class="div2">
+        <h4>Hello World</h4>
+            </div>
+        </div>
+        
+    </div>
+    
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+                            <!-- Overflow -->
+<!-- ------------------------------------------------------------------------ -->
+
+    <div class="box-2">
+        <h3>Overflow</h3>
+
+        <p>Adalah properti css yang akan di gunakan untuk mengatur perilaku element yang keluar dari parent-nya.</p>
+
+        <h4>Value dalam OverFlow :</h4>
+
+        <ol>
+            <li>Visible</li>
+            <li>Auto</li>
+            <li>Hidden</li>
+            <li>Scroll</li>
+        </ol>
+
+
+        <hr color="brown">
+
+        <h3>Contoh Overflow</h3>
+        
+        <p class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque corporis minima dolores consequuntur aliquid cum at animi voluptates quia maxime. Iusto nulla iste temporibus, aperiam provident odio totam vero libero maxime alias pariatur ipsam. Excepturi nisi optio libero magnam nihil molestias quo! Nam consequatur veritatis voluptas provident. Culpa excepturi impedit voluptatibus minima reprehenderit ipsa dolores ex error at soluta eaque voluptate hic ratione doloremque accusamus, beatae quos id officia qui! Id expedita, pariatur illum, adipisci sit voluptatibus voluptatum odit a nulla vitae corporis dolor. Numquam repellat autem ipsum exercitationem ipsam molestiae eum maxime expedita pariatur dicta voluptate nihil deserunt sapiente impedit natus iste, rem beatae corrupti ratione facere? Minus quasi consequatur illum dolor velit tempora consequuntur maxime aperiam, quaerat vitae nostrum incidunt delectus ab iusto temporibus cupiditate veniam quidem animi autem nihil error quos, doloribus aspernatur sapiente. Veniam architecto a, pariatur rem commodi quasi voluptate maxime neque ullam, error voluptatum amet deleniti minima, praesentium iste similique voluptatibus dolor quisquam quaerat. Vero ratione recusandae excepturi iure neque natus tenetur nulla perspiciatis, obcaecati odit similique delectus necessitatibus, sequi, animi reiciendis. Delectus suscipit nemo magni vero, dolorum neque saepe corporis asperiores reprehenderit libero atque debitis aspernatur voluptate? Modi aperiam nihil obcaecati maxime ipsam error, cupiditate sequi aspernatur quam aut odit quasi optio velit illo officia possimus, eum assumenda quod nostrum! Eveniet, qui. Tempora, cum assumenda. Non quis modi iusto velit reiciendis corrupti illum minima adipisci itaque perferendis ea ratione voluptatum earum, eveniet quo in enim ipsa esse sed omnis odit voluptatem? Provident ipsa maiores veniam quia illum laboriosam laborum rem nisi enim, magnam natus eveniet iste aliquid est quos eum. Officiis ut tempora quidem eligendi laudantium nemo harum deleniti quibusdam consequatur. Aperiam aspernatur quia consequuntur doloremque vitae ea facere laborum hic voluptatum ut, incidunt, sunt minus perferendis veritatis eum corporis fugiat alias. Suscipit, quam. Quaerat, pariatur amet. Quas a libero cum reprehenderit reiciendis magni asperiores quisquam, architecto sequi exercitationem? Omnis repellendus nobis animi laudantium dicta temporibus totam ipsam, necessitatibus nisi reiciendis fuga. Laborum necessitatibus deleniti fuga natus nisi pariatur error doloribus recusandae amet, vero tenetur consequatur repellat omnis vel sunt nostrum esse accusamus et ullam. Rem illo incidunt corporis reprehenderit. Aliquid, atque? Expedita deleniti atque perferendis! Quam, nihil optio? Labore blanditiis est ab dolor natus itaque saepe atque nulla? At voluptatum placeat laudantium beatae possimus eligendi quis earum adipisci, et explicabo soluta neque obcaecati officiis tempora odio eius dolores magni doloribus suscipit nesciunt laborum. Accusamus, beatae ab est qui consequatur commodi odit earum, dolore voluptas nostrum iure illum dicta voluptate. Voluptate illum, obcaecati nulla necessitatibus iste ex alias accusantium libero quaerat hic voluptatum blanditiis possimus quos dolore sapiente, explicabo laborum ad natus at fugit consequuntur? Dolores odio natus officiis velit, explicabo labore architecto quam adipisci? Incidunt, rem praesentium nostrum cupiditate excepturi deleniti unde molestiae cumque pariatur aut ad illum corrupti voluptatem debitis quisquam a? Odio repellendus molestiae sint aspernatur quia dolorem dolore asperiores sunt aliquid at, voluptatibus optio architecto. Excepturi vero hic veniam sunt odio quia aperiam, sequi obcaecati culpa fugiat quisquam nam.</p>
+        
+    </div>
+</div>        
+
+</body>
+</html>

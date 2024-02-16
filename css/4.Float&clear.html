@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float and Clear</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kalam:wght@400;700&family=Lemon&family=Pacifico&family=Poppins:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      /* _________________________________________________________________________ */
+      /* ------------------------------------------------------------------------- */
+      /* ==========================Style yang di Pelajari========================= */
+      /* ------------------------------------------------------------------------- */
+          .div1 {
+              float: left;
+              padding: 10px;
+              border: 3px solid #73AD21;
+            }
+            
+          .div2 {
+              padding: 10px;
+              border: 3px solid red;
+            }
+            
+          .div3 {
+            float: left;
+            padding: 10px;  
+            border: 3px solid #73AD21;
+            }
+            
+          .div4 {
+            padding: 10px;
+            border: 3px solid red;
+            clear: left;
+            }
+
+          .div5 {
+            float: left;
+            padding: 10px;
+            border: 3px solid red;
+          }
+
+            /**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+    </style>
+  </head>
+
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- =================================HTML=================================== -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+
+  <body>
+    <div class="judul">
+        <a href="3.BoxModel.html" class="nextP"><i class='bx bx-chevrons-left bx-lg'></i></a>
+        <h1>4. Float dan Clear</h1>
+        <a href="5.CSSPosition.html" class="nextP"><i class='bx bx-chevrons-right bx-lg'></i></a>
+    </div>
+
+    <div class="isi">
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ==============================BOX PERTAMA============================= -->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------- -->
+      <div class="box-1">
+        <div class="daftarIsi">
+          <h3>Daftar Isi</h3>
+          <div class="divDaftarIsi">
+            <ol>
+              <li>
+                <a href="#1"
+                  >Float...................................................................................................................................................................................................................................................................</a
+                >
+              </li>
+              <li>
+                <a href="#2"
+                  >Clear.....................................................................................................................................................................................................................................................................................................................</a
+                >
+              </li>
+              <li>
+                <a href="#3"
+                  >ClearfixTemplate..........................................................................................................................................................................................................................</a
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
+        <img src="img/PandaTrans.png" alt="panda" class="pandalogo">
+      </div>
+
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ==============================BOX KEDUA================================-->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------- -->
+
+      <div class="box-2">
+        <!-- -------------------------------------------------------------------- -->
+        <!-- ===============================Margin================================-->
+        <!-- -------------------------------------------------------------------- -->
+        <section id="1" class="1">
+          <h3 class="Materi">1. Float</h3>
+        </section>
+
+        <h3>Konsep Dasar Float</h3>
+
+        <p>
+          Float merupakan properti pada CSS untuk mengatur posisi sebuah elemen.
+          Sebuah elemen dapat dipaksa untuk berada di sebelah kiri dari
+          parent/pembungkusnya dengan menggunakan properti ini.
+        </p>
+        <br />
+        <ul>
+          <li>
+            Properti CSS float menentukan bagaimana suatu elemen harus
+            mengapung.
+          </li>
+          <li>
+            Properti float digunakan untuk memposisikan dan memformat konten,
+            misalnya. biarkan gambar melayang ke kiri ke teks dalam sebuah
+            wadah.
+          </li>
+          <li>
+            Begitu kita memberikan Float pada suatu element maka element
+            tersebut akan keluar dari flow sehingga parentnya tidak menganggap
+            itu sebuah kotak.
+          </li>
+          <li>
+            Properti float dapat memiliki salah satu dari nilai berikut:
+            <ul>
+              <li>
+                <span>none</span> - Elemen tidak melayang (akan ditampilkan
+                tepat di tempat kemunculannya dalam teks). Ini adalah bawaannya
+              </li>
+              <li><span>Left</span> - Elemen melayang ke kiri wadahnya</li>
+              <li>
+                <span>Right</span> - Elemen mengapung di sebelah kanan wadahnya
+              </li>
+              <li>
+                <span>inherit</span> - Elemen mewarisi nilai float dari induknya
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <hr color="brown" />
+
+        <h3>Example - float: right;</h3>
+        <div class="img">
+          <img src="img/Float.png" alt="Box" />
+        </div>
+
+        <hr color="brown" />
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ==========================Clear===================================-->
+        <!-- ------------------------------------------------------------------- -->
+        <section id="2" class="2">
+          <h3 class="Materi">2. Clear</h3>
+        </section>
+
+        <p>Properti CSS clear menentukan elemen apa yang bisa mengapung di samping elemen yang dibersihkan dan di sisi mana.</p>
+        <h4>Tentang Clear :</h4>
+        <ol>
+          <li>Ketika kita menggunakan properti float, dan kita ingin elemen berikutnya berada di bawah (bukan di kanan atau kiri), kita harus menggunakan properti clear.</li>
+          <li>Properti clear menentukan apa yang harus terjadi dengan elemen yang berada di sebelah elemen mengambang.</li>
+          <li>Properti clear dapat memiliki salah satu nilai berikut:
+            <ul>
+            <li><span>none</span> - Elemen tidak didorong ke bawah elemen melayang kiri atau kanan.Ini adalah bawaannya</li>
+            <li><span>left</span> - Elemen didorong ke bawah elemen melayang kiri</li>
+            <li><span>right</span> - Elemen didorong ke bawah elemen melayang kanan</li>
+            <li><span>both</span> - Elemen didorong ke bawah elemen melayang kiri dan kanan</li>
+            <li><span>inherit</span> - Elemen mewarisi nilai yang jelas dari induknya</li>
+            </ul>
+            </li>
+        </ol>
+
+        <h4>Cara menghentikan / membersihkan float :</h4>
+        <ol>
+          <li>Menggunakan properti <span>overflow: auto;</span></li>
+          <li>Menggunakan <span>Div</span> Kosong.</li>
+          <li>Menggunakan teknik <span>micro clearfix.</span></li>
+        </ol>
+
+        <h4>Contoh Clear :</h4>
+            
+          <div class="contoh">
+            <h3>Without clear</h3>
+            <div class="div1">div1</div>
+            <div class="div2">div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left, the text in div2 flows around div1.</div>
+            <br><br>
+            
+            <h3>With clear</h3>
+            <div class="div3">div3</div>
+            <div class="div4">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+          </div>
+          <br><br><br>
+
+        <section id="3" class="3">
+          <h4>Contoh Clearfix by Nicolas Gallagher:</h4>
+        </section>
+
+          <div class="contoh">
+            
+            <h3>With clearfix</h3>
+          <div class="clearfix cf">
+            <div class="div3">Clearfix</div>
+            <div class="div5">Clearfix - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+          </div>
+            
+            </div>
+
+        <br><hr color="brown" />
+
+        <br><br><br><br><br><br><br><br><br>
+
+        
+    </div>
+  </body>
+</html>

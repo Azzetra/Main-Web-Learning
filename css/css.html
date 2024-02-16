@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(219, 230, 173);
+            height: 100vh;
+        }
+        
+        .button {
+            width: 5rem;
+            height: 3rem;
+            transition: 1s;
+            border-radius: 0;
+            border-color: rgb(255, 225, 103);
+            background-image: radial-gradient(circle, rgb(255, 180, 30), rgb(223, 100, 0))
+        }
+
+        .button a {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            filter: drop-shadow(.9px .9px .5px black);
+        }
+
+        .kotak:hover .button{
+            transform: scale(5) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kotak">
+            <button class="button">
+                <a href="1.CssDisplay.html">Start</a>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
